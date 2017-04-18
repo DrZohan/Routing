@@ -5,10 +5,21 @@ package ru.drzohan.fastrouting;
  */
 public class Node implements INode{
     private int index;
+    private int latitude;
+
     void Node(int index,int lat,int lon)
     {
         this.index = index;
     }
+
+    public int getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(int latitude) {
+        this.latitude = latitude;
+    }
+
     public int getIndex()
     {
         return index;
